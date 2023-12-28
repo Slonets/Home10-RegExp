@@ -33,7 +33,7 @@
     width: 90%;
 }
 
-.button
+button
 {
     margin-top: 10px;
     width: 94%;
@@ -44,7 +44,7 @@
     border-radius:10px;    
 }
 
-.button:hover
+button:hover
 {    
     background-color:#0a0a23;  
 }

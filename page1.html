@@ -6,31 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration</title>
     <link rel="stylesheet" href="./page1_style.css">
+    
 </head>
 
 <body>
 
     <div class="container">
         <h2>Форма реєстрації</h2>
-        <form method="GET" id="registrationForm" name="registrationForm" onsubmit="return validateForm()" action="next_page.html">
+        <form method="GET" id="registrationForm" name="registrationForm"  action="next_page.html">
             
             <br><label for="email">Електронна пошта: </label>
-            <br><input type="email" id="email" name="email" required>
+            <br><input type="text" id="email" name="email" required>
             <br><span id="emailError" class="error"></span>
 
             <br><label for="password">Пароль:</label>
-            <br><input type="password" id="password" name="password" required>
+            <br><input type="text" id="password" name="password" required>
             <br><span id="passwordError" class="error"></span>
 
             <br><label for="confirmPassword">Підтвердження пароля:</label>
-            <br><input type="password" id="confirmPassword" name="confirmPassword" required>
+            <br><input type="text" id="confirmPassword" name="confirmPassword" required>
             <br><span id="confirmPasswordError" class="error"></span>
 
-            <input class="button" type="submit"  value="Регістрація">
+            <button class="button" type="submit" onsubmit="return validateForm()">Регістрація</button>
         </form>
-    </div>
-
-    <script src="./page1_script.js"></script>
+        </div> 
+        
+        <script src="./page1_script.js"></script>
 </body>
 
 </html>
