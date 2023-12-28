@@ -1,0 +1,58 @@
+.container
+{
+    width: 400px;
+    height: 300px;
+    margin: 0 auto;
+    background-color: palegoldenrod;
+    display: flex;
+    flex-direction: column;   
+}
+
+.container>:nth-child(1)
+{    
+    margin: 0 auto;
+}
+
+#registrationForm
+{
+    margin-left: 20px;
+}
+
+#email
+{
+    width: 90%;
+}
+
+#password
+{
+    width: 90%;
+}
+
+#confirmPassword
+{
+    width: 90%;
+}
+
+button
+{
+    margin-top: 10px;
+    width: 94%;
+    height: 40px;   
+    background-color:#2c2c72;     
+    color: #fff;
+    border:none; 
+    border-radius:10px;    
+}
+
+button:hover
+{    
+    background-color:#0a0a23;  
+}
+
+.error 
+{
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    display: none;
+}
