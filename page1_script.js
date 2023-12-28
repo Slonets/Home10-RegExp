@@ -52,8 +52,8 @@ function validateForm() {
     expire.setMinutes(expire.getMinutes() + 10);
 
     //записуємо в куки
-    document.cookie = `email = ${email.value}`+ expire.toUTCString()+ "; path='/';";
-    document.cookie = `password = ${email.value}`+ expire.toUTCString()+ ";";
+    document.cookie = `email = ${email}`+ expire.toUTCString()+ "; path='/';";
+    document.cookie = `password = ${epassword}`+ expire.toUTCString()+ ";";
     
     // Якщо всі перевірки пройдені, можна продовжити обробку форми або відправку на сервер
     if (emailError.textContent === '' && passwordError.textContent === '' && confirmPasswordError.textContent === '') {
