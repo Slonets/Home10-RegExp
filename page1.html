@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+яяя<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -13,7 +13,7 @@
 
     <div class="container">
         <h2>Форма реєстрації</h2>
-        <form method="GET" id="registrationForm" name="registrationForm">
+        <form method="POST" id="registrationForm" name="registrationForm" onsubmit="return validateForm()" action="next_page.html">
             
             <br><label for="email">Електронна пошта: </label>
             <br><input type="email" id="email" name="email" required>
@@ -27,7 +27,7 @@
             <br><input type="password" id="confirmPassword" name="confirmPassword" required>
             <br><span id="confirmPasswordError" class="error"></span>
 
-            <button class="button" type="submit" onsubmit="validateForm()">Регістрація</button>
+            <button class="button" type="submit">Регістрація</button>
         </form>
         </div> 
         
